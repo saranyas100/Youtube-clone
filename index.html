@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
+  <title>YouTube Clone - All in One</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+</head>
+<body>
+  <header>
+    <div class="logo"><i class="fab fa-youtube"></i> <span>YouTube</span></div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="profile-icons">
+      <i class="fas fa-video"></i>
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <div class="tab active" id="home">
+        <h2>Home</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <video src="video1.mp4" controls poster="thumb3.jpg"></video>
+            <h4>Exploring the Mountains</h4>
+            <p>Adventure Channel</p>
+          </div>
+          <div class="video-card">
+            <video src="video1.mp4" controls poster="thumb3.jpg"></video>
+            <h4>Learn HTML in 10 Minutes</h4>
+            <p>Code Academy</p>
+          </div>
+          <div class="video-card">
+            <video src="video1.mp4" controls poster="thumb3.jpg"></video>
+            <h4>Music Mix 2024 🎵</h4>
+            <p>Music Hub</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab" id="shorts">
+        <h2>Shorts</h2>
+        <div class="video-grid">
+          <div class="shorts-card">
+            <video src="video1.mp4" autoplay muted loop></video>
+            <div class="shorts-overlay">
+              <h4>Dance Vibes 💃</h4>
+              <p>@saran_live • 22K views</p>
+            </div>
+            <div class="shorts-actions">
+              <i class="fas fa-thumbs-up"></i>
+              <i class="fas fa-comment"></i>
+              <i class="fas fa-share"></i>
+            </div>
+          </div>
+          <div class="shorts-card">
+            <video src="video1.mp4" autoplay muted loop></video>
+            <div class="shorts-overlay">
+              <h4>Java in 60 Seconds ⚙️</h4>
+              <p>@code_short • 18K views</p>
+            </div>
+            <div class="shorts-actions">
+              <i class="fas fa-thumbs-up"></i>
+              <i class="fas fa-comment"></i>
+              <i class="fas fa-share"></i>
+            </div>
+          </div>
+          <div class="shorts-card">
+            <video src="video1.mp4" autoplay muted loop></video>
+            <div class="shorts-overlay">
+              <h4>Food Hack 🔥</h4>
+              <p>@quickbite • 12K views</p>
+            </div>
+            <div class="shorts-actions">
+              <i class="fas fa-thumbs-up"></i>
+              <i class="fas fa-comment"></i>
+              <i class="fas fa-share"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab" id="subscriptions">
+        <h2>Subscriptions</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <video src="video1.mp4" controls></video>
+            <h4>Travel Vlog #5</h4>
+            <p>Wander With Me</p>
+          </div>
+          <div class="video-card">
+            <video src="video1.mp4" controls></video>
+            <h4>JavaScript Basics</h4>
+            <p>Code School</p>
+          </div>
+          <div class="video-card">
+            <video src="video1.mp4" controls></video>
+            <h4>Daily Fitness Routine</h4>
+            <p>Health & Fit</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab" id="liked">
+        <h2>Liked Videos</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <img src="thumb.jpeg" alt="Video 1" />
+            <h4>Top 10 AI Tools</h4>
+            <p>Tech Insider</p>
+          </div>
+          <div class="video-card">
+            <img src="thumb.jpeg" alt="Video 2" />
+            <h4>Easy Pasta Recipe 🍝</h4>
+            <p>Cooking Made Fun</p>
+          </div>
+          <div class="video-card">
+            <img src="thumb.jpeg" alt="Video 3" />
+            <h4>React.js Project Tutorial</h4>
+            <p>Web Dev Simplified</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab" id="profile">
+        <div class="profile-header">
+          <img src="profile.jpeg" alt="Profile Picture">
+          <div>
+            <h2>YouTube's Channel</h2>
+            <div class="channel-info">
+              <span>2.3K Subscribers</span>
+              <span>10 Videos</span>
+              <span>Joined Jan 2024</span>
+            </div>
+          </div>
+        </div>
+        <h3>Recent Uploads</h3>
+        <div class="video-grid">
+          <div class="video-card">
+            <video src="video1.mp4" controls></video>
+            <h4>Exploring the Mountains</h4>
+            <p>1.2K views • 1 week ago</p>
+          </div>
+          <div class="video-card">
+            <video src="video1.mp4" controls></video>
+            <h4>HTML Basics Tutorial</h4>
+            <p>890 views • 5 days ago</p>
+          </div>
+          <div class="video-card">
+            <video src="video1.mp4" controls></video>
+            <h4>Music Mix 2024</h4>
+            <p>2.1K views • 3 days ago</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <nav class="tab-buttons">
+        <button onclick="showTab('home')"><i class="fas fa-home"></i> Home</button>
+        <button onclick="showTab('shorts')"><i class="fas fa-bolt"></i> Shorts</button>
+        <button onclick="showTab('subscriptions')"><i class="fas fa-photo-video"></i> Subscriptions</button>
+        <button onclick="showTab('liked')"><i class="fas fa-thumbs-up"></i> Liked</button>
+        <button onclick="showTab('profile')"><i class="fas fa-user"></i> Profile</button>
+      </nav>
+    </aside>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      const activeTab = document.getElementById(id);
+      if (activeTab) activeTab.classList.add('active');
+    }
+  </script>
+</body>
+</html>
